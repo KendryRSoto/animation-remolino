@@ -1,0 +1,50 @@
+body {
+  padding: 50px;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #0CB1C4, #FF5733, #6E7E85;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation: 500ms spin infinite linear, 5s changeColor infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes changeColor {
+  10% {
+    background-color: #fe2f00;
+  }
+  20% {
+    background-color: rgba(198, 60, 29, 0.7058823529);
+  }
+  30% {
+    background-color: rgba(157, 213, 43, 0.6196078431);
+  }
+  40% {
+    background-color: #15f320;
+  }
+  60% {
+    background-color: rgba(88, 144, 234, 0.9803921569);
+  }
+  80% {
+    background-color: rgba(28, 155, 210, 0.5882352941);
+  }
+  90% {
+    background-color: #c61cd2;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
